@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20190630/original/pngtree-css-file-document-icon-png-image_4177015.jpg" type="image/png">
+    <title>CSS Box Model</title>
+
+      <style>
+
+        p {
+              margin: 0;
+              padding: 5px;
+              text-align: center;
+            }
+       
+        .chessboard {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          grid-template-rows: repeat(8, 1fr);
+          width: 200vh;
+          height: 190vh;
+
+          }
+    
+        .chessboard > div {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .white {
+          background-color: whitesmoke;
+        }
+    
+        .black {
+          background-color: black;
+          cursor: pointer;
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+        }
+
+      </style>
+  </head>
+    
+  <body>
+
+    <div class="chessboard">
+
+        <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+        <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+        <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+        <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+        <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+
+
+
+
+
+        <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      
+
+
+
+        
+        <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+        
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+          
+        <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+        
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+        <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+        
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+        <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+        
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+
+
+
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+        <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+          dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+      <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+          
+      <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+      
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+      
+      <div class="black" onclick="showText(this)">
+        <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+          dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+        
+        <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: indianred; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>    
+
+                
+      <div class="white"><p style="color: rgb(136, 57, 57)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+      <div class="white"><p style="color: rgb(56, 99, 101)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+      </div>
+
+      <div class="black" onclick="showText(this)">
+          <p class="p1" style="color: cadetblue; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+            dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+          <script>
+              function showText(element) {
+                  var text = element.getElementsByClassName('p1')[0];
+                  text.style.display = 'block';
+              }
+          </script>
+      </div>
+
+          <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+          <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+          <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+          <div class="black" onclick="showText(this)">
+            <p class="p1" style="color: gold; display: none;">Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+              dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>      
+            <script>
+                function showText(element) {
+                    var text = element.getElementsByClassName('p1')[0];
+                    text.style.display = 'block';
+                }
+            </script>
+        </div>
+
+        <div class="white"><p style="color: rgb(186, 162, 23)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+          id magna pulvinar, ultricies lorem id, vehicula elit.</p>
+        </div>
+
+  
+    
+          
+
+    </div>
+
+  </body>
+  
+</html>
+        
+        
+        
+        
+
+      
+     
+
+     
+  
+          
+
